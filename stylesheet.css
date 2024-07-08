@@ -30,6 +30,8 @@
     width: 800px;
     z-index: -1;
     bottom: 0;
+    align-items: center;
+    justify-content: center;
   }
   .home-content h1{
     font-size: 50px;
@@ -164,50 +166,27 @@
   .experience h2{
     font-size: 50px;
     margin-top: 30px;
+    color: rgb(255, 0, 0);;
   }
-  .experience-date1{
-    display: flex;
+  .highlights h2{
+    font-size: 50px;
+    margin-top: 30px;
+    color: rgb(215, 199, 135);
+    font-weight: bold;
   }
-  .experience-date2{
-    display: flex;
+  .story h2{
+    font-size: 50px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 25px;
   }
-  .description1{
-    border-right: 3px solid rgb(219, 222, 11);
-    border-left: 0px solid rgb(219, 222, 11);
-    width: 50%;
-    padding-left: 50px;
-    margin-left: 0px;
-  }
-  .experience-description1{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding: 0px 50px;
-  }
-  .experience-description2{
-    padding: 0px 50px;
-  }
-  .perexperience{
-    justify-content: center;
-  }
-  .description2{
-    width: 50%;
-    border-left: 3px solid rgb(219, 222, 11);
-    padding-right: 50px;
-    margin-left: 0px;
-  }
-  .experience-description1 h5{
-    font-size: 18px;
-  }
-  .experience-description1 p{
-    font-size: 16px;
-  }
-  .experience-description2 h5{
-    font-size: 18px;
-  }
-  .experience-description2 p{
-    font-size: 16px;
+  .ventures h2{
+    font-size: 50px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #060d45;
+    font-weight: 600;
   }
   .hire h2{
     font-size: 50px;
@@ -318,6 +297,34 @@
     width: 90%;
     height: 500px;
   }
+  .career-highlights{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .career-highlights-text{
+    width: 40%;
+  }
+  .story-1{
+    flex-direction: row;
+    align-items: center;
+  }
+  .story-3{
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .story-3 p{
+    width: 100%;
+  }
+  .professional-background{
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  .professional-background-text{
+    width: 40%;
+  }
 }
 
 @media screen and (max-width:1400px) {
@@ -349,6 +356,15 @@
     font-size: 45px;
   }
   .experience h2{
+    font-size: 45px;
+  }
+  .story h2{
+    font-size: 45px;
+  }
+  .highlights h2{
+    font-size: 45px;
+  }
+  .ventures h2{
     font-size: 45px;
   }
   .hire h2{
@@ -409,6 +425,22 @@
   .Pro-title h1{
     font-size: 45px;
   }
+  .career-highlights{
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .career-highlights-text{
+    width: 100%;
+  }
+  .story-1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .story-3{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width:1100px) {
@@ -463,42 +495,17 @@
   .experience h2{
     font-size: 40px;
   }
+  .ventures h2{
+    font-size: 40px;
+  }
+  .highlights h2{
+    font-size: 40px;
+  }
+  .story h2{
+    font-size: 40px;
+  }
   #perex1{
     flex-direction: row;
-  }
-  .experience-date1{
-    display: none;
-  }
-  .experience-date2{
-    display: none;
-  }
-  .experience-description1{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .description1{
-    border-right: 0px solid rgb(219, 222, 11);
-    border-left: 5px solid rgb(219, 222, 11);
-    width: 100%;
-    margin-left: 40px;
-    padding-left: 0px;
-  }
-  .perexperience{
-    justify-content: flex-start;
-  }
-  .description2{
-    width: 100%;
-    border-left: 5px solid rgb(219, 222, 11);
-    padding-right: 0px;
-    margin-left: 40px;
-  }
-  #exdate{
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding-block: 5px;
   }
   .hire h2{
     font-size: 40px;
@@ -540,6 +547,17 @@
   .youtube{
     width: 100%;
     height: 400px;
+  }
+  .story-3 p{
+    width: 100%;
+  }
+  .professional-background{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  .professional-background-text{
+    width: 100%;
   }
 }
 
@@ -606,6 +624,15 @@
     font-size: 35px;
   }
   .experience h2{
+    font-size: 35px;
+  }
+  .story h2{
+    font-size: 35px;
+  }
+  .highlights h2{
+    font-size: 35px;
+  }
+  .ventures h2{
     font-size: 35px;
   }
   .hire h2{
@@ -754,23 +781,14 @@
   .experience h2{
     font-size: 25px;
   }
-  .experience-description1 h5{
-    font-size: 14px;
+  .story h2{
+    font-size: 25px;
   }
-  .experience-description1 p{
-    font-size: 12px;
+  .highlights h2{
+    font-size: 25px;
   }
-  .experience-description2 h5{
-    font-size: 14px;
-  }
-  .experience-description2 p{
-    font-size: 12px;
-  }
-  .experience-description1{
-    padding: 0px 20px 0px 40px;
-  }
-  .experience-description2{
-    padding: 0px 20px 0px 40px;
+  .ventures h2{
+    font-size: 25px;
   }
   .hire h2{
     font-size: 30px;
@@ -865,11 +883,14 @@
   .experience h2{
     font-size: 20px;
   }
-  .experience-description1 p{
-    font-size: 10px;
+  .highlights h2{
+    font-size: 20px;
   }
-  .experience-description2 p{
-    font-size: 10px;
+  .story h2{
+    font-size: 20px;
+  }
+  .ventures h2{
+    font-size: 20px;
   }
   .hire h2{
     font-size: 25px;
@@ -1014,7 +1035,7 @@ body{
 .profileImage img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #background-video{
@@ -1129,7 +1150,8 @@ body{
   width: 100%;
   border: 10px solid #0ef;
   border-radius: 50%;
-  object-fit:cover;
+  object-fit:contain;
+  background-color: #0e5d84;
   padding: 5px;
 }
 
@@ -1643,131 +1665,13 @@ body{
 }
 
 .experience h2 span{
-  color: #0ef;
+  background-color: rgb(255, 0, 0);
+  color: white;
 }
 
-.experience-content{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.perexperience {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  width: 100%;
-}
-
-.description1{
-  height: 250px;
-  padding-block: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.description2{
-  height: 250px;
-  padding-block: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.experience-description1{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  background-color: rgba(33, 57, 78, 0.5);
-  height: 100%;
-  width: 100%;
-}
-
-.experience-description1 h5{
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.experience-description1 p{
-  text-align: justify;
-  width: 100%;
-}
-
-.experience-description2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(33, 57, 78, 0.5);
-  height: 100%;
-  width: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.experience-description2 h5{
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.experience-description2 p{
-  text-align: justify;
-  width: 100%;
-}
-
-.experience-logo{
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  border: 5px solid #0ef;
-  border-radius: 50%;
-  background-color: #000;
-}
-
-.experience-logo i{
-  color: #0ef;
-  position: absolute;
-  font-size: 50px;
-  top: 10px;
-  left: 10px;
-}
-
-.experience-date1{
-  width: 50%;
-  border-left: 3px solid rgb(219, 222, 11);
-  height: 250px;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.experience-date1 p{
-  text-align: left;
-  padding-left: 50px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.experience-date2{
-  width: 50%;
-  border-right: 3px solid rgb(219, 222, 11);
-  height: 250px;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.experience-date2 p{
-  text-align: right;
-  padding-right: 50px;
-  font-size: 20px;
-  font-weight: 600;
+.story h2 span{
+  font-weight: bolder;
+  color: blueviolet;
 }
 
 .hire{
@@ -2055,5 +1959,210 @@ html{
   text-align: justify;
   line-height: 1.5;
   padding-block: 30px;
+  width: 100%;
+}
+
+.professional-background{
+  display: flex;
+  height: auto;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.professional-background-text{
+  background-color: rgba(152, 46, 46, 0.853);
+  padding: 15px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.professional-background-text span{
+  font-weight: bold;
+}
+
+.About-Background{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  background-color: #676969e8;
+  padding: 20px;
+}
+
+.About-Background p{
+  text-align: justify;
+  padding-block: 30px;
+}
+
+.professional-background-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.highlights {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  padding: 50px 10% 0;
+}
+
+.highlights h2 span{
+  background-color: rgb(215, 199, 135);
+  color: white;
+  font-weight: 600;
+}
+
+.career-highlights{
+  display: flex;
+  align-items: stretch;
+  height: auto;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.career-highlights-text{
+  background-color: rgb(133, 122, 77);
+  padding: 15px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.about-highlights{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #676969e8;
+  padding: 20px;
+}
+
+.about-highlights-small{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-highlights-small p{
+  text-align: justify;
+  width: fit-content;
+}
+
+.career-highlights-image img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.career-highlights-extraparts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #676969e8;
+  padding-inline: 3%;
+  width: 100%;
+}
+
+.career-highlights-extraparts p{
+  width: 50%;
+  text-align: justify;
+}
+
+.career-highlights-image{
+  width: 50%;
+  padding: 25px;
+}
+
+.career-highlights-image img{
+  object-fit: contain;
+}
+
+.career-highlight-image{
+  width: 50%;
+  height: 50%;
+}
+
+.career-highlight-image img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.story{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  padding: 50px 10% 0;
+}
+
+.story-1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.story-1 p{
+  text-align: justify;
+  padding-left: 30px;
+}
+
+.story-1 div span{
+  font-weight: bold;
+  font-size: large;
+  color: blueviolet;
+}
+
+.story-2{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.story-3{
+  display: flex;
+  width: 70%;
+}
+
+.story-3 p{
+  text-align: justify;
+  padding: 15px;
+}
+
+.story-3 p span{
+  font-weight: bold;
+  font-size: large;
+  color: blueviolet;
+}
+
+.ventures{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  padding: 50px 10% 0;
+}
+
+.ventures p{
+  text-align: justify;
   width: 100%;
 }
